@@ -1,0 +1,243 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+:root{
+    --color-primary: #0A0E19;
+    --color-segundary: #EF0E3D;
+}
+head{
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url(fundão.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+/*CABEÇALHO - HEADER*/
+.header{    
+    background-color: #0a0e19c2;
+    height: .1em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+    position: fixed;
+    z-index: 3;
+    box-shadow: 0px 0px 20px 10px #0a0e199c;
+}
+
+.header img{
+    height: 3em;
+}
+
+.menu ul,li,a{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    transition: all .10s;
+    display: flex;
+    gap: 2em;
+    list-style:none;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.menu a:hover, li:hover{
+    color: var(--color-segundary);
+}
+
+
+.back{
+    position: relative;
+}
+
+.back h1{
+    color: white;
+    position: absolute;
+    top: 180px;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    text-shadow: 0px 0px 20px black;
+}
+
+
+.back1{
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    max-height: 80vh;
+}
+.back1 img:hover{
+    transform: translateY(-1rem) scale(2);
+}
+
+.back2{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    max-height: 90vh;
+}
+
+
+
+.info-sobre{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5rem;
+    background-color: #0A0E19;
+    height: 450px;
+    box-shadow: 0px 0px 20px 10px #0A0E19;
+}
+
+.info-left h1{
+    color: #EF0E3D;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    transition: transform 0.1s ease-in-out, box-shadow 0.1s;
+}
+
+.info-left p{
+    color: white;
+    font-size: 25px;
+
+}
+
+.info-right img{
+    width: 650px;
+    height: 350px;
+    border-radius: 35px;
+    transition: all .5s;
+}
+.info-right img:hover{
+    transform: translateY(-0.5rem) scale(1);
+}
+
+
+
+.teia{
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem;
+    gap: 9rem;
+    background-color: #171e3163;
+    border-radius: 25px;
+    margin: 6rem;
+}
+
+.teia-right h1{
+    color: #EF0E3D;
+    font-family: 'Poppins', sans-serif;
+}
+
+.teia-right p{
+    color: white;
+    font-size: 25px;
+}
+
+.teia-left img{
+    height: auto;
+    transition: all .5s;
+}
+.teia-left img:hover{
+    transform: translateY(-.5rem) scale(1);
+}
+
+
+
+
+.movies{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #EF0E3D;
+
+}
+
+
+.card-image {
+	display: block;
+	min-height: 20rem; 
+	background: #fff center center no-repeat;
+	background-size: cover;
+	filter: blur(0px); /* DESFOQUE NAS IMAGENS */
+}
+
+.card-image > img {
+	display: block;
+	width: 100%;
+	opacity: 0; 
+}
+
+.card-image.is-loaded {
+	filter: blur(2px);
+    transition: all .50s;
+}
+.card-image.is-loaded:hover {
+    transition: all .50s;
+	filter: none; /* RETIRA O DESFOQUE DA IMAGEM */
+}
+
+.card-list {
+	display: block;
+	margin: 1rem auto;
+	padding: 0;
+	font-size: 0;
+	text-align: center;
+	list-style: none;
+}
+
+.card-list h2{
+    color: #EF0E3D;
+    font-family: 'Marvel', sans-serif;
+    font-size: 30px;
+}
+
+.card {
+    background-color: #0A0E19;
+    height: auto;
+	display: inline-block;
+	width: 90%;
+	max-width: 20rem;
+	margin: 1rem;
+	font-size: 1rem;
+	text-decoration: none;
+	overflow: hidden;
+	box-shadow: 0px 0px 20px .5px #ef0e3f32;
+	transition: transform 0.1s ease-in-out, box-shadow 0.1s;
+}
+
+.card:hover {
+	transform: translateY(-0.5rem) scale(1.0125);
+	box-shadow: 0 0.5em 3rem 1rem #0a0e196b;
+}
+
+.card-description {
+	display: block;
+	padding: 1em .1em;
+	color: white;
+	text-decoration: none;
+}
+
+.card-description > h2 {
+	margin: 0 0 0.2em;
+}
+
+.card-description > p {
+	margin: 0;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
