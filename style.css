@@ -98,6 +98,70 @@ body{
 }
 
 
+/*SLIDERS*/
+
+.container{
+    display: flex;
+    width: 100%;
+    min-height: 60vh;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.coniner h1{
+    color: var(--color-segundary);
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-images{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70rem;
+}
+
+.slider{
+    transition: opacity .5s;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    border-radius: 25px;
+}
+
+.on{
+    opacity: 1;
+}
+
+#prev-button, #next-button{
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+#prev-button img, #next-button img{
+    width: 100%;
+    height: 100%;
+}
+
+#prev-button{
+    transform: rotate(180deg);
+}
+
+
+
+
+
+
+
+
+
+
+
 /*PRSONAGENS - HERÓIS*/
 .main{
     background-image: url(imgs/fundo2.jpg);
