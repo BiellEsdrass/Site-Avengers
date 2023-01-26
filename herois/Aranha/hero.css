@@ -26,7 +26,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 3rem;
+    padding: 2.5rem 6rem;
     position: fixed;
     z-index: 3;
     box-shadow: 0px 0px 20px 10px #0a0e199c;
@@ -45,7 +45,7 @@ body{
     list-style:none;
     text-decoration: none;
     color: white;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 .menu a:hover, li:hover{
@@ -77,7 +77,7 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    max-height: 80vh;
+    max-height: 90%;
 }
 .back1 img:hover{
     transform: translateY(-1rem) scale(2);
@@ -99,7 +99,7 @@ body{
     align-items: center;
     padding: 5rem;
     background-color: #0A0E19;
-    height: 450px;
+    height: auto;
     box-shadow: 0px 0px 20px 10px #0A0E19;
 }
 
@@ -116,9 +116,9 @@ body{
 
 }
 
+
+
 .info-right img{
-    width: 650px;
-    height: 350px;
     border-radius: 35px;
     transition: all .5s;
 }
@@ -136,6 +136,8 @@ body{
     background-color: #171e3163;
     border-radius: 25px;
     margin: 6rem;
+    height: auto;
+    box-shadow: 0px 0px 6px 7px rgba(0, 0, 0, 0.235);
 }
 
 .teia-right h1{
@@ -149,7 +151,8 @@ body{
 }
 
 .teia-left img{
-    height: auto;
+    width: 600px;
+    height: 400px;
     transition: all .5s;
 }
 .teia-left img:hover{
@@ -168,6 +171,22 @@ body{
 }
 
 
+.main{
+    background-image: url(imgs/fundo2.jpg);
+    background-size: cover;
+    height: auto;
+    background-attachment: fixed;
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-top: 7em;
+    margin: 0;
+
+}
+
+
+
+
+/* CARDS DOS HERÓIS */
 .card-image {
 	display: block;
 	min-height: 20rem; 
@@ -208,7 +227,7 @@ body{
 
 .card {
     background-color: #0A0E19;
-    height: auto;
+    height: 34em;
 	display: inline-block;
 	width: 90%;
 	max-width: 20rem;
@@ -216,7 +235,7 @@ body{
 	font-size: 1rem;
 	text-decoration: none;
 	overflow: hidden;
-	box-shadow: 0px 0px 20px .5px #ef0e3f32;
+	box-shadow: 0 0 3rem -1rem rgba(0,0,0,0.5);
 	transition: transform 0.1s ease-in-out, box-shadow 0.1s;
 }
 
@@ -227,7 +246,7 @@ body{
 
 .card-description {
 	display: block;
-	padding: 1em .1em;
+	padding: 1em 0.5em;
 	color: white;
 	text-decoration: none;
 }
@@ -240,4 +259,41 @@ body{
 	margin: 0;
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
+}
+
+
+@media (max-width:1500px){
+    .teia{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .teia-left img{
+        width: 800px;
+        height: 500px;
+    }
+}
+
+
+@media (max-width:1100px){
+    .info-sobre{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+    }
+
+    .info-left h1,p{
+        display: flex;
+        align-self: flex-start;
+    }
+
+    .teia{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2rem;
+    }
 }

@@ -18,12 +18,12 @@ body{
 /*CABEÇALHO - HEADER*/
 .header{    
     background-color: #0a0e19c2;
-    height: 1em;
+    height: .1em;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 3em;
+    padding: 2.5rem 6rem;
     position: fixed;
     z-index: 3;
     box-shadow: 0px 0px 20px 10px #0a0e199c;
@@ -42,12 +42,13 @@ body{
     list-style:none;
     text-decoration: none;
     color: white;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 .menu a:hover, li:hover{
     color: var(--color-segundary);
 }
+
 
 /*PARTE ONDE FICA O LETREIRO DA AVENGERS*/
 .capa{
@@ -75,7 +76,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: auto;
+    height: 130vh;
 }
 
 .sobre h1{
@@ -107,6 +108,7 @@ body{
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    margin-top: 5rem;
 }
 
 .coniner h1{
