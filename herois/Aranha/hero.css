@@ -93,6 +93,7 @@ body{
 
 
 
+/*PARTE DO SOBRE DOS PERSONAGENS*/
 .info-sobre{
     display: flex;
     justify-content: space-evenly;
@@ -103,31 +104,38 @@ body{
     box-shadow: 0px 0px 20px 10px #0A0E19;
 }
 
+
+.info-left{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
 .info-left h1{
     color: #EF0E3D;
     font-family: 'Poppins', sans-serif;
     overflow: hidden;
     transition: transform 0.1s ease-in-out, box-shadow 0.1s;
 }
-
 .info-left p{
     color: white;
     font-size: 25px;
-
 }
-
 
 
 .info-right img{
     border-radius: 35px;
     transition: all .5s;
+    width: 100%;
+    margin: auto auto;
+    display: flex;
+
 }
 .info-right img:hover{
     transform: translateY(-0.5rem) scale(1);
 }
 
 
-
+/*PARTE ONDE FICA O SEGUNDO BLOCO SOBRE OS PERSONAGENS*/
 .teia{
     display: flex;
     justify-content: space-between;
@@ -135,7 +143,8 @@ body{
     gap: 9rem;
     background-color: #171e3163;
     border-radius: 25px;
-    margin: 6rem;
+    margin: 4rem auto;
+    width: 90%;
     height: auto;
     box-shadow: 0px 0px 6px 7px rgba(0, 0, 0, 0.235);
 }
@@ -171,6 +180,12 @@ body{
 }
 
 
+
+
+
+
+
+/* CARDS DOS HERÓIS */
 .main{
     background-image: url(imgs/fundo2.jpg);
     background-size: cover;
@@ -227,9 +242,9 @@ body{
 
 .card {
     background-color: #0A0E19;
-    height: 34em;
+    max-height: 36rem;
 	display: inline-block;
-	width: 90%;
+	width: 100%;
 	max-width: 20rem;
 	margin: 1rem;
 	font-size: 1rem;
@@ -262,6 +277,20 @@ body{
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width:1500px){
     .teia{
         display: flex;
@@ -278,6 +307,8 @@ body{
 }
 
 
+
+
 @media (max-width:1100px){
     .info-sobre{
         display: flex;
@@ -285,15 +316,86 @@ body{
         justify-content: space-evenly;
     }
 
-    .info-left h1,p{
+    .info-left h1{
         display: flex;
         align-self: flex-start;
     }
+    
 
     .teia{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         gap: 2rem;
+    }
+}
+
+@media (max-width:970px){
+    .teia-left img{
+        width: 500px;
+        height: 300px;
+        transition: all .5s;
+    }
+
+    .teia-right p{
+        font-size: 20px;
+    }
+
+    
+    .teia{
+        padding: 2rem;
+    }
+}
+
+@media (max-width:670px){
+    .teia-left img{
+        width: 420px;
+        height: 250px;
+        transition: all .5s;
+    }
+    .teia-right p{
+        font-size: 17px;
+    }
+
+    .info-left p{
+        font-size: 20px;
+    }
+    .teia{
+        padding: 1rem;
+    }
+}
+
+@media (max-width:460px){
+    .teia-left img{
+        width: 300px;
+        height: 200px;
+        transition: all .5s;
+    }
+    .teia-right p{
+        font-size: 17px;
+    }
+    .info-left p{
+        font-size: 15px;
+    }
+
+    .teia{
+        padding: 1rem;
+    }
+}
+
+@media (max-width:340px){
+    .teia-left img{
+        width: 200px;
+        height: 100px;
+        transition: all .5s;
+    }
+
+    .teia{
+        padding: 1rem;
+    }
+    
+    .teia-right p{
+        color: white;
+        font-size: 100%;
     }
 }
