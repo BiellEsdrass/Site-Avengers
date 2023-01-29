@@ -66,6 +66,7 @@ body{
     height: 20rem;
     display: flex;
     margin: 10px auto;
+    transition: all .5s;
 }
 
 /*SOBRE OS AVENGERS*/
@@ -96,6 +97,38 @@ body{
     text-decoration: underline;
     color: #EF0E3D;
 }
+
+
+
+/*SLIDER*/
+
+.sobre-imgs{
+    display: flex;
+    width:70%;
+    height: 560px;
+    }
+    
+.sobre-imgs img{
+    width: 0px;
+    flex-grow:1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+    filter: contrast(80%);
+}
+    
+.sobre-imgs img:hover{
+    cursor: crosshair;
+    width: 250px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+/*FIM SLIDER*/
+
+
+
+
+
 
 
 
@@ -199,7 +232,7 @@ body{
 
 @media (max-width:849px){
     .capa img{
-        height: 20rem;
+        height: 18rem;
     }
     .sobre h1{
         font-size: 25px;
@@ -211,7 +244,7 @@ body{
     }
 }
 
-@media (max-width:779px){
+@media (max-width:852px){
     .capa img{
         height: 14rem;
     }
