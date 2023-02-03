@@ -13,7 +13,6 @@ head{
     scroll-behavior: smooth;
 }
 body{
-    background-image: url(fundão.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -109,6 +108,7 @@ body{
     display: flex;
     flex-direction: column;
     text-align: start;
+    gap:10px;
 }
 .info-left h1{
     color: #EF0E3D;
@@ -193,7 +193,7 @@ body{
     background-attachment: fixed;
     padding-left: 5em;
     padding-right: 5em;
-    padding-top: 7em;
+    padding-top: 5em;
     margin: 0;
 
 }
@@ -314,6 +314,8 @@ body{
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-evenly;
+        padding: 2rem;
+        align-items: center;
     }
 
     .info-left h1{
@@ -347,6 +349,30 @@ body{
     }
 }
 
+@media (max-width:740px){
+    .main{
+        padding-left: .5em;
+        padding-right: .5em;
+        padding-top: 2em;
+    }
+    
+    .card-list {
+        display: block;
+        margin: 1rem auto;
+        padding: 0;
+        font-size: 0;
+        text-align: center;
+        list-style: none;
+    }
+    .card {
+        height: 30em;
+        display: inline-block;
+        width: 40%;
+        margin: .5rem;
+        font-size: 1rem;
+    }
+}
+
 @media (max-width:670px){
     .teia-left img{
         width: 420px;
@@ -372,7 +398,29 @@ body{
         padding: 2rem 1rem;
     }
 }
-
+@media (max-width:481px){
+    .main{
+        padding-left: .5em;
+        padding-right: .5em;
+        padding-top: 2em;
+    }
+    
+    .card-list {
+        display: block;
+        margin: 1rem auto;
+        padding: 0;
+        font-size: 0;
+        text-align: center;
+        list-style: none;
+    }
+    .card {
+        height: 30em;
+        display: inline-block;
+        width: 100%;
+        margin: .5rem;
+        font-size: 1rem;
+    }
+}
 @media (max-width:460px){
     .teia-left img{
         width: 300px;
