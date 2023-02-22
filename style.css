@@ -14,6 +14,7 @@ head{
 }
 body{
     background-color: var(--color-primary);
+
 }
 /*CABEÇALHO - HEADER*/
 .header{    
@@ -147,17 +148,7 @@ body{
 
     gap: 3rem;
 }
-.trailers-img img{
-    border-radius: 15px;
-    height: 350px;
-    width: 550px;
-    cursor: pointer;
 
-    transition: all .5s;
-}
-.trailers-img img:hover{
-    filter: brightness(40%);
-}
 .trailers-img h3{
     margin-top: 10px;
     font-size: 20px;
@@ -169,16 +160,8 @@ body{
     cursor: pointer;
 }
 
-.trailers-videos{
-    position: absolute;
-    z-index: 1;
-}
-.Trailer{
-    opacity: 0;
-}
-.Trailer visible{
-    opacity: 1;
-}
+
+
 
 
 

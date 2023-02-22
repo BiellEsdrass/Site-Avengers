@@ -33,3 +33,17 @@ function lazyLoad() {
 }
 
 
+let trailer = document.querySelector('.trailers-videos');
+let viewTrailerUltimato = document.querySelector('.vinga-ultimato');
+let closeTrailer = document.querySelectorAll('.closeTrailer')
+
+
+
+
+
+viewTrailerUltimato.addEventListener('click', function(){
+	trailer.style.opacity = '1'
+
+})
+
+
