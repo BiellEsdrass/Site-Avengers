@@ -139,7 +139,7 @@ body{
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
-.trailers-img{
+.trailers{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -149,13 +149,19 @@ body{
     gap: 3rem;
 }
 
-.trailers-img h3{
-    margin-top: 10px;
+.trailers iframe{
+    width: 560px;
+    height: 315px;
+}
+
+.trailers h3{
+    margin-top: 20px;
+    margin-bottom: 10px;
     font-size: 20px;
 
     transition: all .5s ease-in-out;
 }
-.trailers-img h3:hover{
+.trailers h3:hover{
     color: #EF0E3D;
     cursor: pointer;
 }

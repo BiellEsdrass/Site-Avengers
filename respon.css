@@ -120,7 +120,23 @@
     }
 }
 
+@media (max-width:670px){
+    .trailers iframe{
+        width: 430px;
+        height: 255px;
+    }
+}
+
+
 @media (max-width:481px){
+    .trailers{
+        gap: 1rem;
+    }
+    .trailers iframe{
+        width: 340px;
+        height: 235px;
+    }
+
     .sobre-imgs{
         height: 350px;
     }
@@ -170,7 +186,7 @@
         height: 7rem;
     }
     .sobre h1{
-        font-size: 14px;
+        font-size: 16px;
         text-align: center;
     }
     
@@ -180,6 +196,13 @@
 }
 
 @media (max-width:287px){
+    .trailers{
+        gap: .5rem;
+    }
+    .trailers iframe{
+        width: 260px;
+        height: 185px;
+    }
     .sobre{
         padding: .5rem;
     }
