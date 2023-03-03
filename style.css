@@ -9,7 +9,7 @@
     --color-primary: #0A0E19;
     --color-segundary: #EF0E3D;
 }
-head{
+html{
     scroll-behavior: smooth;
 }
 body{
